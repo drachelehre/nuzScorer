@@ -5,11 +5,11 @@ from PyQt6.QtWidgets import (
 )
 
 
-class RedBlueWindow(QWidget):
+class YellowWindow(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Red/Blue")
+        self.setWindowTitle("Yellow")
 
         # Main layout for the window
         main_layout = QVBoxLayout(self)
@@ -30,14 +30,14 @@ class RedBlueWindow(QWidget):
         layout.addWidget(QLabel("Your Level"), 0, 2)
 
         battles = [
-            ("Brock", 14),
+            ("Brock", 12),
             ("Misty", 21),
             ("Lt. Surge", 24),
-            ("Erika", 29),
-            ("Koga", 43),
-            ("Sabrina", 43),
-            ("Blaine", 47),
-            ("Giovanni", 50),
+            ("Erika", 32),
+            ("Koga", 50),
+            ("Sabrina", 50),
+            ("Blaine", 54),
+            ("Giovanni", 55),
             ("Lorelei", 56),
             ("Bruno", 58),
             ("Agatha", 60),

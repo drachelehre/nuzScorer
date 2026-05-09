@@ -1,6 +1,7 @@
 from PyQt6.QtWidgets import (QWidget, QLabel, QLineEdit, QPushButton,
                             QMessageBox, QGridLayout, QMainWindow, QComboBox, QSpinBox)
 from games.redbluewindow import *
+from games.yellowwindow import *
 
 
 class ScoreGUI(QMainWindow):
@@ -15,7 +16,7 @@ class ScoreGUI(QMainWindow):
 
         self.game_select = QComboBox()
         self.game_select.addItems([
-            'RB', 'Yellow', 'GSC', 'RSE', 'FRLG',
+            'RB', 'Yellow', 'GSC', 'RS', 'Emerald' 'FRLG',
             'DP', 'Platinum', 'HGSS', 'BW', 'B2W2', 'XY',
             'SM', 'USUM', 'SwSh', 'CV'
         ])
@@ -43,6 +44,8 @@ class ScoreGUI(QMainWindow):
 
             case 'Yellow':
                 print("Yellow chosen")
+                self.w = YellowWindow()
+                self.w.show()
 
             case 'GSC':
                 print('Gold/Silver/Crystal')
