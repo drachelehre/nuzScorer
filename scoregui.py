@@ -8,6 +8,11 @@ from games.yellowwindow import YellowWindow
 from games.goldsilvercrystalwindow import GoldSilverCrystalWindow
 from games.rubysaphhirewindow import RubySapphireWindow
 from games.emeraldwindow import EmeraldWindow
+from games.diamondpearlwindow import DiamondPearlWindow
+from games.platinumwindow import PlatinumWindow
+from games.heartsoul import HeartSoulWindow
+from games.blackwhitewindow import BlackWhiteWindow
+from games.black2white2window import Black2White2Window
 
 
 class ScoreGUI(QMainWindow):
@@ -36,6 +41,7 @@ class ScoreGUI(QMainWindow):
             'BW',
             'B2W2',
             'XY',
+            'ORAS',
             'SM',
             'USUM',
             'SwSh',
@@ -67,6 +73,11 @@ class ScoreGUI(QMainWindow):
             'GSC': GoldSilverCrystalWindow,
             'RS': RubySapphireWindow,
             'Emerald': EmeraldWindow,
+            'DP': DiamondPearlWindow,
+            'Platinum': PlatinumWindow,
+            'HGSS': HeartSoulWindow,
+            'BW': BlackWhiteWindow,
+            'B2W2': Black2White2Window,
         }
 
     def choose_game(self):

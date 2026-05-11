@@ -1,4 +1,4 @@
-from .basewindow import *
+from .basewindow import BaseWindow
 
 
 class FireLeafWindow(BaseWindow):

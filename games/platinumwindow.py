@@ -1,7 +1,7 @@
-from .basewindow import *
+from .basewindow import BaseWindow
 
 
-class DiamondPearlWindow(BaseWindow):
+class PlatinumWindow(BaseWindow):
     def __init__(self):
         battles = [
             ("Roark", 14),
@@ -27,4 +27,4 @@ class DiamondPearlWindow(BaseWindow):
             "White-Out is Game Over"
         ]
 
-        super().__init__("Diamond/Pearl", battles, optional_rules)
+        super().__init__("Platinum", battles, optional_rules)
