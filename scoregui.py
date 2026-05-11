@@ -1,10 +1,17 @@
-from PyQt6.QtWidgets import (QWidget, QLabel, QLineEdit, QPushButton,
-                            QMessageBox, QGridLayout, QMainWindow, QComboBox, QSpinBox)
-from games.redbluewindow import *
-from games.yellowwindow import *
+from PyQt6.QtWidgets import (
+    QWidget, QLabel, QPushButton,
+    QGridLayout, QMainWindow, QComboBox
+)
+
+from games.redbluewindow import RedBlueWindow
+from games.yellowwindow import YellowWindow
+from games.goldsilvercrystalwindow import GoldSilverCrystalWindow
+from games.rubysaphhirewindow import RubySapphireWindow
+from games.emeraldwindow import EmeraldWindow
 
 
 class ScoreGUI(QMainWindow):
+
     def __init__(self):
         super().__init__()
 
@@ -12,43 +19,69 @@ class ScoreGUI(QMainWindow):
 
         layout = QGridLayout()
 
+        # Game select
         game_select_label = QLabel("Game Select:")
 
         self.game_select = QComboBox()
+
         self.game_select.addItems([
-            'RB', 'Yellow', 'GSC', 'RS', 'Emerald' 'FRLG',
-            'DP', 'Platinum', 'HGSS', 'BW', 'B2W2', 'XY',
-            'SM', 'USUM', 'SwSh', 'CV'
+            'RB',
+            'Yellow',
+            'GSC',
+            'Emerald',
+            'FRLG',
+            'DP',
+            'Platinum',
+            'HGSS',
+            'BW',
+            'B2W2',
+            'XY',
+            'SM',
+            'USUM',
+            'SwSh',
+            'CV'
         ])
 
         layout.addWidget(game_select_label, 0, 0)
         layout.addWidget(self.game_select, 0, 1)
 
+        # Button
         choose_button = QPushButton("Choose...")
         choose_button.clicked.connect(self.choose_game)
 
         layout.addWidget(choose_button, 1, 0)
 
+        # Central widget
         widget = QWidget()
         widget.setLayout(layout)
+
         self.setCentralWidget(widget)
 
+        # Store open windows
+        self.windows = []
+
+        # Game -> Window class mapping
+        self.game_windows = {
+            'RB': RedBlueWindow,
+            'Yellow': YellowWindow,
+            'GSC': GoldSilverCrystalWindow,
+            'RS': RubySapphireWindow,
+            'Emerald': EmeraldWindow,
+        }
+
     def choose_game(self):
+
         game = self.game_select.currentText()
 
-        match game:
-            case 'RB':
-                print("Red/Blue chosen")
-                self.w = RedBlueWindow()
-                self.w.show()
+        window_class = self.game_windows.get(game)
 
-            case 'Yellow':
-                print("Yellow chosen")
-                self.w = YellowWindow()
-                self.w.show()
+        if window_class is not None:
 
-            case 'GSC':
-                print('Gold/Silver/Crystal')
+            window = window_class()
 
-            case _:
-                print(f"{game} chosen")
+            self.windows.append(window)
+
+            window.show()
+
+        else:
+            print(f"{game} not implemented yet")
