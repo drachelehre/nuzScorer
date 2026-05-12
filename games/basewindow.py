@@ -82,22 +82,22 @@ class BaseWindow(QWidget):
         self.death_score.setRange(0, 100)
         layout.addWidget(self.death_score, bottom_row, 1)
 
-        self.calculate_button = QPushButton("Calculate...")
-        self.calculate_button.clicked.connect(self.calculate)
-        layout.addWidget(self.calculate_button, bottom_row, 2)
-
         self.score_label = QLabel("Score:")
         layout.addWidget(self.score_label, bottom_row + 1, 0)
 
         self.total_label = QLabel("0")
         layout.addWidget(self.total_label, bottom_row + 1, 1)
 
+        self.calculate_button = QPushButton("Calculate...")
+        self.calculate_button.clicked.connect(self.calculate)
+        layout.addWidget(self.calculate_button, bottom_row + 1, 2)
+
         # Scroll area setup
         scroll.setWidget(container)
 
         main_layout.addWidget(scroll)
 
-        self.resize(500, 400)
+        self.resize(500, 600)
 
     def calculate(self):
 

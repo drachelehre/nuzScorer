@@ -13,6 +13,12 @@ from games.platinumwindow import PlatinumWindow
 from games.heartsoul import HeartSoulWindow
 from games.blackwhitewindow import BlackWhiteWindow
 from games.black2white2window import Black2White2Window
+from games.xandywindow import XAndYWindow
+from games.omegaalphawindow import OmegaAlphaWindow
+from games.sunmoonwindow import SunMoonWindow
+from games.ultrawindow import UltraWindow
+from games.swordshieldwindow import SwordShieldWindow
+from games.crimsonvioletwindow import CrimsonVioletWindow
 
 
 class ScoreGUI(QMainWindow):
@@ -45,7 +51,8 @@ class ScoreGUI(QMainWindow):
             'SM',
             'USUM',
             'SwSh',
-            'CV'
+            'CV',
+            "WaWi"
         ])
 
         layout.addWidget(game_select_label, 0, 0)
@@ -78,6 +85,12 @@ class ScoreGUI(QMainWindow):
             'HGSS': HeartSoulWindow,
             'BW': BlackWhiteWindow,
             'B2W2': Black2White2Window,
+            "XY": XAndYWindow,
+            "ORAS": OmegaAlphaWindow,
+            "SM": SunMoonWindow,
+            "USUM": UltraWindow,
+            "SwSh": SwordShieldWindow,
+            "CV": CrimsonVioletWindow,
         }
 
     def choose_game(self):
