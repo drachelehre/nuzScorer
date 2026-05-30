@@ -116,7 +116,7 @@ class BaseWindow(QWidget):
             if rule.isChecked():
                 total *= 1.1
 
-        total -= (self.death_score.value() * 5)
+        total -= self.death_score.value()
 
         total = max(0, int(total))
 
