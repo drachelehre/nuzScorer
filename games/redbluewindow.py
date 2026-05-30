@@ -24,7 +24,8 @@ class RedBlueWindow(BaseWindow):
             "Minimum battles",
             "No items",
             "Limit Pokemon Centers",
-            "White-Out is Game Over"
+            "White-Out is Game Over",
+            "No Legendaries",
         ]
 
         super().__init__("Red/Blue", battles, optional_rules)

@@ -25,7 +25,8 @@ class RubySapphireWindow(BaseWindow):
             "Minimum battles",
             "No items",
             "Limit Pokemon Centers",
-            "White-Out is Game Over"
+            "White-Out is Game Over",
+            "No Legendaries",
         ]
 
         super().__init__("Ruby/Sapphire", battles, optional_rules)

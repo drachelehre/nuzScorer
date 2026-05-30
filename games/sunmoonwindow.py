@@ -28,7 +28,8 @@ class SunMoonWindow(BaseWindow):
             "No items",
             "Limit Pokemon Centers",
             "White-Out is Game Over",
-            "No Z Moves"
+            "No Legendaries",
+            "No Z Moves",
         ]
 
         super().__init__("Sun/Moon", battles, optional_rules)

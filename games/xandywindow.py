@@ -25,6 +25,7 @@ class XAndYWindow(BaseWindow):
             "No items",
             "Limit Pokemon Centers",
             "White-Out is Game Over",
+            "No Legendaries",
             "No Mega Evolution"
         ]
 

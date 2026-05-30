@@ -28,6 +28,7 @@ class UltraWindow(BaseWindow):
             "No items",
             "Limit Pokemon Centers",
             "White-Out is Game Over",
+            "No Legendaries",
             "No Z Moves"
         ]
 

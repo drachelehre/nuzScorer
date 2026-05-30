@@ -24,7 +24,8 @@ class Black2White2Window(BaseWindow):
             "Minimum battles",
             "No items",
             "Limit Pokemon Centers",
-            "White-Out is Game Over"
+            "White-Out is Game Over",
+            "No Legendaries",
         ]
 
         super().__init__("Black 2/White 2", battles, optional_rules)

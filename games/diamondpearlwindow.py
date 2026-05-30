@@ -25,6 +25,7 @@ class DiamondPearlWindow(BaseWindow):
             "No items",
             "Limit Pokemon Centers",
             "White-Out is Game Over"
+            "No Legendaries",
         ]
 
         super().__init__("Diamond/Pearl", battles, optional_rules)

@@ -24,7 +24,8 @@ class PlatinumWindow(BaseWindow):
             "Minimum battles",
             "No items",
             "Limit Pokemon Centers",
-            "White-Out is Game Over"
+            "White-Out is Game Over",
+            "No Legendaries",
         ]
 
         super().__init__("Platinum", battles, optional_rules)

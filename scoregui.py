@@ -8,6 +8,7 @@ from games.yellowwindow import YellowWindow
 from games.goldsilvercrystalwindow import GoldSilverCrystalWindow
 from games.rubysaphhirewindow import RubySapphireWindow
 from games.emeraldwindow import EmeraldWindow
+from games.fireleafwindow import FireLeafWindow
 from games.diamondpearlwindow import DiamondPearlWindow
 from games.platinumwindow import PlatinumWindow
 from games.heartsoul import HeartSoulWindow
@@ -80,6 +81,7 @@ class ScoreGUI(QMainWindow):
             'GSC': GoldSilverCrystalWindow,
             'RS': RubySapphireWindow,
             'Emerald': EmeraldWindow,
+            'FRLG': FireLeafWindow,
             'DP': DiamondPearlWindow,
             'Platinum': PlatinumWindow,
             'HGSS': HeartSoulWindow,
