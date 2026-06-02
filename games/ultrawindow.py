@@ -15,10 +15,6 @@ class UltraWindow(BaseWindow):
             ("Nanu", 44),
             ("Kommo-o", 49),
             ("Hapu", 54),
-            ("Molayne", 57),
-            ("Olivia (E4)", 57),
-            ("Acerola", 57),
-            ("Kahili", 57),
             ("Hau", 60)
         ]
 

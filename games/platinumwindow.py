@@ -12,10 +12,6 @@ class PlatinumWindow(BaseWindow):
             ("Byron", 41),
             ("Candice", 44),
             ("Volkner", 50),
-            ("Aaron", 53),
-            ("Bertha", 55),
-            ("Flint", 57),
-            ("Lucian", 59),
             ("Cynthia", 62)
         ]
 

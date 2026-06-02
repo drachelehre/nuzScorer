@@ -13,10 +13,6 @@ class RubySapphireWindow(BaseWindow):
             ("Winona", 33),
             ("Tate and Liza", 42),
             ("Wallace", 43),
-            ("Sidney", 49),
-            ("Phoebe", 51),
-            ("Glacia", 53),
-            ("Drake", 55),
             ("Steven", 58)
         ]
 

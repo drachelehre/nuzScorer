@@ -13,10 +13,6 @@ class YellowWindow(BaseWindow):
             ("Sabrina", 50),
             ("Blaine", 54),
             ("Giovanni", 55),
-            ("Lorelei", 56),
-            ("Bruno", 58),
-            ("Agatha", 60),
-            ("Lance", 62),
             ("Champ", 65)
         ]
 

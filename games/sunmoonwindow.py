@@ -15,10 +15,6 @@ class SunMoonWindow(BaseWindow):
             ("Nanu", 39),
             ("Kommo-o", 45),
             ("Hapu", 48),
-            ("Hala (E4)", 55),
-            ("Olivia (E4)", 55),
-            ("Acerola", 55),
-            ("Kahili", 55),
             ("Kukui", 58)
         ]
 

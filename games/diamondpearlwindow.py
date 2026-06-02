@@ -12,10 +12,6 @@ class DiamondPearlWindow(BaseWindow):
             ("Byron", 39),
             ("Candice", 42),
             ("Volkner", 49),
-            ("Aaron", 57),
-            ("Bertha", 59),
-            ("Flint", 61),
-            ("Lucian", 63),
             ("Cynthia", 66)
         ]
 
@@ -24,7 +20,7 @@ class DiamondPearlWindow(BaseWindow):
             "Minimum battles",
             "No items",
             "Limit Pokemon Centers",
-            "White-Out is Game Over"
+            "White-Out is Game Over",
             "No Legendaries",
         ]
 

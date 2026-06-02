@@ -25,6 +25,9 @@ from games.crimsonvioletwindow import CrimsonVioletWindow
 class ScoreGUI(QMainWindow):
 
     def __init__(self):
+        """
+        Initial window for the app, allowing the user to choose the game to evaluate
+        """
         super().__init__()
 
         self.setWindowTitle("Nuzlocke Scorer")
@@ -96,7 +99,9 @@ class ScoreGUI(QMainWindow):
         }
 
     def choose_game(self):
-
+        """
+        Opens the window of the chosen game based off of the Game Select combobox
+        """
         game = self.game_select.currentText()
 
         window_class = self.game_windows.get(game)

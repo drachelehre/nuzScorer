@@ -12,10 +12,6 @@ class BlackWhiteWindow(BaseWindow):
             ("Skyla", 35),
             ("Brycen", 39),
             ("Iris/Drayden", 43),
-            ("Shauntal", 50),
-            ("Marshall", 50),
-            ("Grimsley", 50),
-            ("Caitlin", 50),
             ("N", 52),
             ("Ghetsis", 54)
         ]

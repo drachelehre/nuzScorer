@@ -13,10 +13,6 @@ class OmegaAlphaWindow(BaseWindow):
             ("Winona", 35),
             ("Tate and Liza", 45),
             ("Wallace", 46),
-            ("Sidney", 52),
-            ("Phoebe", 53),
-            ("Glacia", 54),
-            ("Drake", 55),
             ("Steven", 59)
         ]
 

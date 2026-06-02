@@ -12,10 +12,6 @@ class FireLeafWindow(BaseWindow):
             ("Sabrina", 43),
             ("Blaine", 47),
             ("Giovanni", 50),
-            ("Lorelei", 56),
-            ("Bruno", 58),
-            ("Agatha", 60),
-            ("Lance", 62),
             ("Champ", 63)
         ]
 

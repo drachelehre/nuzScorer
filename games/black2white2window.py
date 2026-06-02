@@ -12,10 +12,6 @@ class Black2White2Window(BaseWindow):
             ("Skyla", 39),
             ("Drayden", 48),
             ("Marlin", 51),
-            ("Shauntal", 58),
-            ("Marshall", 58),
-            ("Grimsley", 58),
-            ("Caitlin", 58),
             ("Iris", 59),
         ]
 

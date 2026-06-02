@@ -6,7 +6,9 @@ from PyQt6.QtWidgets import (
 
 
 class BaseWindow(QWidget):
-
+    """
+    Base structure for the scoring window. Populated using the various other subclasses
+    """
     def __init__(self, title, battles, optional_rules):
         super().__init__()
 
@@ -100,7 +102,10 @@ class BaseWindow(QWidget):
         self.resize(500, 600)
 
     def calculate(self):
-
+        """
+        Calculates and displays the final score for the Nuzlocke run
+        :return:
+        """
         total = 0
 
         for battle in self.battle_widgets:

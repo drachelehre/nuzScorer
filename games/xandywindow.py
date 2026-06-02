@@ -12,10 +12,6 @@ class XAndYWindow(BaseWindow):
             ("Valerie", 42),
             ("Olympia", 48),
             ("Wulfric", 59),
-            ("Malva", 65),
-            ("Wikstrom", 65),
-            ("Drasma", 65),
-            ("Siebold", 65),
             ("Diantha", 59),
         ]
 

@@ -12,10 +12,6 @@ class EmeraldWindow(BaseWindow):
             ("Winona", 33),
             ("Tate and Liza", 42),
             ("Juan", 46),
-            ("Sidney", 49),
-            ("Phoebe", 51),
-            ("Glacia", 53),
-            ("Drake", 55),
             ("Wallace", 58)
         ]
 
